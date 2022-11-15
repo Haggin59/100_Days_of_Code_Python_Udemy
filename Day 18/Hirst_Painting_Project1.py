@@ -1,12 +1,17 @@
 import colorgram
 
-colors = colorgram.extract('damien-hirst-lactulose.jpg', 20)
+colors = colorgram.extract('damien-hirst-lactulose.jpg', 30)
 
-# colors_rgb = []
+colors_rgb = []
 
-# for i in range(20):
-#     colors_rgb.append(colors[i].rgb)
+for i in range(30):
+    
+    r = colors[i].rgb[0]
+    g = colors[i].rgb[1]
+    b = colors[i].rgb[2]
 
-# print(colors_rgb)
+    temp_color = (r,g,b)
 
-print(colors[0].rgb)
+    colors_rgb.append(temp_color)
+
+print(colors_rgb)
